@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Practice</title>
+    <style>
+        a{
+            display:inline-block;
+            width:5%;
+        }
+        .banner{
+            display:block;
+            margin-bottom:20px;
+            background-color: lightgrey;
+            border: 5px grey solid;
+            border-left:0;
+            border-right:0;
+            padding: 50px;
+        }
+        body{
+            display: block;
+            align-content: center;
+            text-align: center;
+            padding:0;  
+            margin:0;
+        }
+        .card{
+            margin: 20px;
+            text-align: left;
+            max-width:25%;
+        }
+        .card img{
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+        
+        .card-holder{
+            display:flex;
+            justify-content: center;
+            width:80%;
+            margin:auto;
+        }
+        .card-holder:first-of-type{
+            padding-top: 20px;
+        }
+        .card-holder:last-of-type{
+            padding-bottom: 20px;
+        }
+        .col-3{
+            width:20%;
+        }
+        footer{
+            border-top: 5px grey solid;
+            display: flex;
+            background-color: lightgrey;
+            width:100%;
+            justify-content: center;
+            padding:30px 0;
+        }
+        
+        h1{
+            margin: 5px;
+        }  
+        h2{
+            margin: 5px;
+        }  
+        h3{
+            margin: 5px;
+        }
+        header{
+            display:block;
+            margin-bottom:20px;
+            /* width: 100%; */
+            /* background-color: GREY; */
+        }
+        .img-container{
+            position: relative;
+        }
+        .img-container:hover .overlay {
+            opacity: 1;
+            border:10px black solid;
+            border-radius:5px;
+            width:180px;
+            height:180px;
+        }
+        #logo{
+            border-radius: 25px;
+            margin: 10px;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0,.5);
+            width: 180px;
+            height:180px;
+            transition: .5s;
+            opacity:0;
+            border: 10px rgba(0,0,0,0) solid;
+        }
+        p{
+            margin:0;
+        }
+        .socials{
+            margin:5px;
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://picsum.photos/50/50" /> 
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <h1>Title</h1>
+        <h2>Sub-heading</h2>
+    </div>
+    <div class="card-holder">
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div>
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div> 
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div> 
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div> 
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+    </div>
+    <div class="card-holder">
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div> 
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div>
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div>
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/200/200" /> 
+                <div class="overlay"></div>
+            </div> 
+            <h3>Pic Title</h3>
+            <p>Description</p>
+        </div>
+    </div>
+    <footer>
+        <div class="col-3">
+            <h3>Contact</h3>
+            <p>Phone</p>
+            <p>Email</p>
+            <p>Address</p>
+        </div>
+        <div class="col-3">
+            <h3>Copyright</h3>
+            <p>Copyright Info</p>
+        </div>
+        <div class="col-3">
+            <h3>Site Map</h3>
+            <p>Sitemap</p>
+        </div>
+        <div class="col-3">
+            <h3>Socials</h3>
+            <img class="socials" src="https://picsum.photos/50/50" />
+            <img class="socials" src="https://picsum.photos/50/50" />
+            <img class="socials" src="https://picsum.photos/50/50" />
+        </div>
+    </footer>
+</body>
+</html>
