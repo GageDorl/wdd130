@@ -5,7 +5,7 @@
 
 body{
     background-color: #FFF4C5;
-    margin:0;
+    margin:0; /*Didn't like margin on body */
 }
 
 .book, .join{
