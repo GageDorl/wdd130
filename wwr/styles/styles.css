@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
 #background{
     background-color: #66B266;
     height: 725px;
@@ -5,13 +7,20 @@
 
 body{
     background-color: #FFF4C5;
-    margin:0; /*Didn't like margin on body */
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:22px;
 }
 
 .book, .join{
     background-color: #008BCC;
     color: #FFF4C5;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -23,6 +32,10 @@ body{
     text-align: center;
 }
 
+.card-img{
+    border: 10px solid #00468B;
+}
+
 #content{
     max-width: 1600px;
     margin:0 auto;
@@ -31,6 +44,8 @@ body{
 footer{
     background-color: #00468B;
     color: #FFF4C5;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
@@ -48,6 +63,14 @@ footer p{
 
 footer p a:hover{
     text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+h2{
+    margin:0;
 }
 
 h4{
@@ -68,32 +91,50 @@ header{
 
 .home-title{
     color:#008BCC;
+    font-family: 'Gravitas One';
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+
+#logo_link{
+    padding-top: 5px;
 }
 
 main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 .msg{
     background-color: #FFF4C5;
+    line-height: 1.5em;
+    padding:35px;
 }
 
 .msg h2{
-    color:#008BCC
+    color:#008BCC;
+    font-family: 'Gravitas One';
 }
 
 .msg p{
-    color:#008BCC
+    color:#008BCC;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 nav a{
     text-align: center;
     color: #FFF4C5;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -101,3 +142,6 @@ nav a:hover{
     color: #008BCC;
 }
 
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
