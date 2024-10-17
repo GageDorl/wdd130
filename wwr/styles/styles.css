@@ -91,7 +91,7 @@ header{
 
 .home-title{
     color:#008BCC;
-    font-family: 'Gravitas One';
+    font-family: 'Gravitas One', Impact, serif;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -121,7 +121,7 @@ main section img{
 
 .msg h2{
     color:#008BCC;
-    font-family: 'Gravitas One';
+    font-family: 'Gravitas One', Impact, serif;
 }
 
 .msg p{
