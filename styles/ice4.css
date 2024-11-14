@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+#article{
+    padding:30px;
+}
+
+body{
+    margin:0;
+    background-color: black;
+}
+.container{
+    margin:auto;
+    max-width: 500px;
+    font-family: Rokkitt, serif;
+    text-align: center;
+    height:100vh;
+    position: relative;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(73, 96, 137);
+    color:white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Times New Roman";
+    font-weight:lighter;
+}
+
+h1{
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+h2{
+    margin:0;
+    font-size: 2em;
+    font-weight:lighter;
+}
+
+p{
+    font-size: 1.7em;
+    padding:0 20px;
+    color:grey;
+}
+
+#pic_container{
+    width:100%;
+}
+
+#pic_container img{
+    width:100%;
+}
+
+.read, .views{
+    border-right: 2px solid grey;
+}
+
+.read, .views, .comments{
+    padding: 30px 0;
+}
+
+span{
+    color:rgb(73, 96, 137);
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+sup{
+    line-height: 0%;
+}

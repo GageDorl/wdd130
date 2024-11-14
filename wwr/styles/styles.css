@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
+#article1{
+    grid-column: 5/10;
+}
+
+#article2{
+    grid-column: 1/6;
+}
+
+#article3{
+    grid-column: 5/10;
+}
+
 #background{
     background-color: #66B266;
     height: 725px;
@@ -13,6 +25,7 @@ body{
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
     font-size:22px;
+    color:#008BCC;
 }
 
 .book, .join{
@@ -90,7 +103,12 @@ footer .social img{
     padding-top: 15px;
 }
 
+h1{
+    font-family: "Gravitas One";
+}
+
 h2{
+    font-family: "Gravitas One";
     margin:0;
 }
 
@@ -138,6 +156,14 @@ header{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+.home-grid2{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    max-width: 1400px;
+    margin:auto;
+    gap:40px;
+    padding:20px;
+}
 
 .home-title{
     color:#008BCC;
@@ -149,6 +175,30 @@ header{
 .icon{
     width: 80px;
     padding-top: 10px;
+}
+
+#image1{
+    grid-column: 1/5;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 90% 50%;
+}
+
+#image2{
+    grid-column: 6/10;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+#image3{
+    grid-column: 1/5;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 0 50%;
 }
 
 .logo{
@@ -228,6 +278,12 @@ nav a:hover{
 
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
+}
+
+#title{
+    max-width: 1400px;
+    margin:40px auto;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width:900px){
