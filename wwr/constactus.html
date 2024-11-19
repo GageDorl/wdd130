@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id='logo_link' href='index.html'>
+                <img class="logo" src="images/logo.svg" alt="Site Logo, the Rexburg Temple with Waves in front of it with the text RRR at the very front">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="constactus.html">Contact Us</a>
+            </nav>
+        </header>
+        
+        <h1 id="title">Rivers</h1>
+        <main>
+            <div id="feedback"></div>
+            <form>
+                <p>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="user_name">
+                </p>
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="emial" id="email" name="user_email">
+                </p>
+                <p>
+                    <label for="msg">Message: </label>
+                    <textarea id="msg" name="user_msg"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Send your message</button>
+                </p>
+            </form>
+            <script>
+                const feedbackElement = document.getElementById('feedback');
+                const formElement = document.forms[0];
+                formElement.addEventListener('submit', function(e){
+                    e.preventDefault();
+                    feedbackElement.innerHTML=`Hello ${formElement.user_name.value}! Thank you for your message. We will get back with you as soon as possible!`;
+                    document.body.classList.toggle('moveDown');
+                    feedbackElement.style.height = '3em';
+                    feedbackElement.style.padding = '.5em';
+                    setTimeout(function(){
+                        feedbackElement.style.padding = '0';
+                        feedbackElement.style.height = '0';
+                        document.body.classList.toggle('moveDown');
+                    }, 5000)
+                });
+            </script>
+        </main>
+        <footer>
+            <p> Rexburg Rapids Rafting &copy; 2024 - Gage D'Orlando</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="fb icon"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="https://instagram.com"><img src="images/instagram.png" alt="instagram icon"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

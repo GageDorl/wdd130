@@ -26,6 +26,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size:22px;
     color:#008BCC;
+    text-align: center;
+    transition: 2s;
 }
 
 .book, .join{
@@ -41,6 +43,14 @@ body{
 .book:hover, .join:hover{
     background-color: #00468B;
     color:#008BCC;
+}
+
+button{
+    margin-left:.5em;
+}
+
+.button{
+    padding-left: 90px;
 }
 
 .button-box{
@@ -72,6 +82,19 @@ body{
     margin:0 auto;
 }
 
+#feedback{
+    background-color: antiquewhite;
+    position:absolute;
+    box-sizing:border-box;
+    top:0;
+    left:0;
+    right:0;
+    /* display:none; */
+    height:0;
+    transition: 2s;
+    overflow: hidden;
+}
+
 footer{
     background-color: #00468B;
     color: #FFF4C5;
@@ -101,6 +124,13 @@ footer p a:hover{
 
 footer .social img{
     padding-top: 15px;
+}
+
+form{
+    display:inline-block;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
 }
 
 h1{
@@ -201,6 +231,24 @@ header{
     object-position: 0 50%;
 }
 
+input, textarea{
+    font: 1em sans-serif;
+    width:300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus{
+    outline-style: solid;
+    outline-color: #000;
+}
+
+label{
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
 .logo{
     height:100px;
     display: block;
@@ -226,6 +274,10 @@ main section img{
     grid-row:5/8;
     height: 100%;
     box-shadow: 5px 5px 10px #6f7364;
+}
+
+.moveDown{
+    margin-top:3em;
 }
 
 .msg{
@@ -266,6 +318,10 @@ nav a:hover{
     color: #008BCC;
 }
 
+p + p{
+    margin-top: 1em;
+}
+
 .rapids-card{
     grid-column: 8/10;
     grid-row: 2/3;
@@ -278,6 +334,11 @@ nav a:hover{
 
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
+}
+
+textarea{
+    vertical-align: top;
+    height:5em;
 }
 
 #title{
