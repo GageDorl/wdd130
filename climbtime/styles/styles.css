@@ -1,7 +1,123 @@
-main{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #FFCD69   ;
+    --secondary-color: #63b568 ;
+    --accent1-color: #da6e4d;
+    --accent2-color: black;
+    --accent3-color: white;
 }
 
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#boulder-def{
+    grid-column: 1/13;
+}
+
+
 footer{
-    text-align: center;
+    display: flex;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    height: 60px;
+    align-items:center;
+    justify-content: center;
+}
+
+h1,h2,h3{
+    font-family: Lora, serif;
+    color:var(--secondary-color)
+}
+
+h2{
+    margin:0;
+    justify-self: left;
+    
+}
+
+.hero-img{
+    grid-column: 1/13;
+    grid-row:1/2;
+    height:100%;
+    width:100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.hero-title{
+    display: grid;
+    grid-column: 1/13;
+    grid-row:1/2;
+    align-self: center;
+    background-color: rgba(0,0,0,.3);
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-items: center;
+    color:var(--accent3-color)
+}
+
+#history-img{
+    justify-content:left;
+    grid-column: 1/9;
+    grid-row:3/6;
+    height:100%;
+    width:100%;
+}
+#history-title, #history-text{
+    grid-column: 9/13;
+    justify-content:right;
+}
+
+#history-text{
+    grid-row:4/5;
+}
+
+#history-title{
+    grid-row:3/4;
+    height:30px;
+}
+
+#logo{
+    width:70px;
+    margin:auto;
+    align-self: center;
+    display: block;
+    border-radius: 10px;
+}
+
+
+main{
+    display:grid;
+    justify-items: center;
+    width:1200px;
+    margin:auto;
+    grid-template-columns: repeat(12,1fr);
+    gap:20px;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    height:80px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav a, footer a{
+    text-decoration: none;
+    color: var(--accent3-color);
+    padding:0 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+nav a:hover, footer a:hover{
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
