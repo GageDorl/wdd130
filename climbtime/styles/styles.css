@@ -18,9 +18,7 @@ body{
 }
 
 #equipment-img{
-    float:right;
-    height:200px;
-    border-radius: 10px;
+    height:100%;
 }
 
 .equipment-float{
@@ -155,6 +153,36 @@ nav a:hover, footer a:hover{
     color: var(--primary-color);
     background-color: var(--accent1-color);
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.5);
+    color:var(--accent3-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.pic-container{
+    float:right;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    height:250px;
+    
+}
+
+.pic-container:hover .overlay {
+    opacity: 1;
+  }
 
 .title{
     grid-column: 1/13;
